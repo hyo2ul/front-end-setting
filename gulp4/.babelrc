@@ -1,0 +1,24 @@
+{
+	"presets": [
+    'es2015',
+    'es2017',
+    'stage-3',
+    'react'
+	],
+	"plugins": [
+    'transform-decorators-legacy',
+    'transform-class-properties' ,
+    'transform-async-to-generator' ,
+    'transform-object-assign' ,
+    'transform-regenerator' ,
+		[
+			"transform-runtime",
+			{
+				"helpers": false, // 기본값으로 true 를 갖고있기에 false 로 수정합니다.
+				"polyfill": false, // 기본값으로 true 를 갖고있기에 false 로 수정합니다.
+				"regenerator": true,
+				"moduleName": "babel-runtime"
+			}
+		]
+	]
+}
